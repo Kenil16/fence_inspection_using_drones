@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Load gazebo controller configurations -->
+  <rosparam file="$(find eit_playground)/config/gazebo/gazebo_controller.yaml" command="load" />
+
+  <param name="robot_description" command="$(find xacro)/xacro $(find eit_playground)/models/rotors_description/urdf/convecdro_base.xacro rotors_description_dir:=$(find eit_playground)/models/rotors_description" />
+
+  <!-- Load ros_control controller configurations -->
+  <rosparam file="$(find eit_playground)/config/ros_control/joint_state_controller.yaml" command="load" />
+  <rosparam file="$(find eit_playground)/config/ros_control/joint_trajectory_controller.yaml" command="load" />
+
+    <!-- Start the controllers -->
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" output="screen"
+      args="joint_state_controller manipulator_controller"/>
+
+    <!-- Robot state publisher -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen" />
+
+    <!-- Load teleop -->
+    <node name="rqt_joint_trajectory_controller" pkg="rqt_joint_trajectory_controller" type="rqt_joint_trajectory_controller" />
+
+</launch>

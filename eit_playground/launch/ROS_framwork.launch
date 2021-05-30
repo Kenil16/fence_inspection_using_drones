@@ -1,0 +1,17 @@
+<!-- launch file -->
+
+<launch>
+    <node pkg="eit_playground" type="droneCoreV2.py" name="droneCore" output="screen"></node>
+    <node pkg="eit_playground" type="groundControlNode.py" name="keypressNode"> </node>
+    <node pkg="eit_playground" type="loiterPilot.py" name="loiterPilot" output="screen"></node>
+    <node pkg="eit_playground" type="missionControl.py" name="missionControl" output="screen" cwd="node"></node>
+    <node pkg="eit_playground" type="fence_breach_detection.py" name="fence_breach_detection" output="screen" cwd="node"></node>
+    <node pkg="eit_playground" type="messageControl.py" name="messageControl" output="screen"></node>
+
+    <!-- <node pkg="example_pilot" type="examplePilot.py" name="examplePilot" output="screen"></node> -->
+    <!-- <node pkg="root_framework" type="loiterPilot.py" name="loiterPilot" output="screen"></node> -->
+    <!-- <node pkg="pylon_locator" type="pylonNode.py" name="pylonNode" output="screen"></node> -->
+    <!-- <node pkg="mission_node" type="missionNode.py" name="missionNode" output="screen"></node> -->
+    <!-- <node pkg="mission_node" type="inspectNode.py" name="inspectNode" output="screen"></node> -->
+
+</launch>

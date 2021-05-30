@@ -1,0 +1,1 @@
+<annotations><filename>image45.png</filename><id>45</id><size><width>720</width><height>720</height><depth>3</depth></size><object><name>fence_breach</name><bndbox><xmin>578</xmin><ymin>193</ymin><xmax>711</xmax><ymax>330</ymax></bndbox></object><object><name>fence_breach</name><bndbox><xmin>29</xmin><ymin>170</ymin><xmax>319</xmax><ymax>453</ymax></bndbox></object></annotations>

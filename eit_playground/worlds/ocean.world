@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <physics name='default_physics' default='0' type='ode'>
+      <gravity>0 0 -9.8066</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>10</iters>
+          <sor>1.3</sor>
+          <use_dynamic_moi_rescaling>0</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+      <magnetic_field>6.0e-6 2.3e-5 -4.2e-5</magnetic_field>
+    </physics>
+
+    <!-- Global light source -->
+    <light type="directional" name="sun">
+      <pose>40 30 300 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>.7 .7 .7 1</specular>
+      <direction>-0.2 0.2 -1.2</direction>
+      <cast_shadows>1</cast_shadows>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+    </light>
+
+    <!-- A ground plane
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    -->
+
+    <include>
+      <uri>model://tanker_ship</uri>
+      <pose>61.0 -24.0 -4.000000 0 0 -0.78</pose>
+    </include>
+
+    <!-- Bounding box with sea surface -->
+   <include>
+      <uri>model://ocean_vessel</uri>
+      <pose>0 0 -3 0 0 0</pose>
+    </include>
+
+    <model name="pier1">
+      <pose>4 0 -8.043 0 0 1.57</pose>
+      <include>
+        <uri>model://pier</uri>
+      </include>
+    </model>
+
+    <model name="pier2">
+      <pose>-17.22 0 -8.043 0 0 1.57</pose>
+      <include>
+        <uri>model://pier</uri>
+      </include>
+    </model>
+
+
+    <model name="vestas1">
+      <pose>360 0 -8.043 0 0 0.3</pose>
+      <include>
+        <uri>model://Vestas_V52</uri>
+      </include>
+    </model>
+
+
+    <model name="vestas2">
+      <pose>350 -80 -8.043 0 0 0.3</pose>
+      <include>
+        <uri>model://Vestas_V52</uri>
+      </include>
+    </model>
+
+
+    <model name="vestas3">
+      <pose>370 80 -8.043 0 0 0.3</pose>
+      <include>
+        <uri>model://Vestas_V52</uri>
+      </include>
+    </model>
+
+
+    <model name="vestas4">
+      <pose>380 160 -8.043 0 0 0.3</pose>
+      <include>
+        <uri>model://Vestas_V52</uri>
+      </include>
+    </model>
+
+
+    <model name="vestas5">
+      <pose>340 -160 -8.043 0 0 0.3</pose>
+      <include>
+        <uri>model://Vestas_V52</uri>
+      </include>
+    </model>
+
+    <!-- Fix the light conditions -->
+    <scene>
+      <ambient>0.0 0.0 0.0 1.0</ambient>
+      <shadows>0</shadows>
+    </scene>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-10 0 6 0 0.3 0</pose>
+      </camera>
+    </gui>
+  </world>
+</sdf>

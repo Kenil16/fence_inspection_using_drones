@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="Vestas_V52">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Vestas_V52/meshes/model.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="wind_turbine">
+        <geometry>
+          <mesh>
+            <uri>model://Vestas_V52/meshes/model.dae</uri>
+	         </mesh>
+        </geometry>
+     </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,13 @@
+material GroundPlane/Grass
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture hca_plane.png
+      }
+    }
+  }
+}
