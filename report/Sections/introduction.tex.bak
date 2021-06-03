@@ -1,8 +1,0 @@
-\documentclass[../Head/Main.tex]{subfiles}
-\begin{document}
-\section{Introduction}
-\label{sec:introduction}
-
-This rapport will focus on the technical aspect of Expert in teams, based on our team's innovative idea. Furthermore, this case was given to us by Lorenz Technology, whom wishes an automated solution for fence inspection. This automated solution should be able to help e.g. airport security with maintenance as well as heightened security by inspecting their fence for breaches. The current workflow of this is a two person job and requires a car. These two will drive around the perimeter while one person inspects the fences for breaches. Not only is this a very tiresome job, it is also highly inefficient and contributes to pollution. Therefore, it is abundantly clear that drone solution with high automated capabilities would be desired. A solution such as this will contribute economically both for Lorenz Technology as well as their end-user, which in this case is the airport. 
-
-\end{document}

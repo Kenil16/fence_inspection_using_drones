@@ -1,0 +1,21 @@
+# LaTeX
+
+# Exclude the following 
+*-blx.bib
+*.log
+*.bbl
+*.blg
+*.aux
+*.out
+*.xml
+!package.xml
+*.toc
+*.synctex.gz
+*.bak
+#*.pdf
+__pycache__
+*~
+*.pyc
+*.swp
+*.pytxcode
+*.pygtex
