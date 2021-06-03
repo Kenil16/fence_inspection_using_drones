@@ -1,0 +1,25 @@
+\documentclass[../Head/Main.tex]{subfiles}
+\begin{document}
+\section{Project Requirements}
+\label{subsec:req_UAS}
+This section describes the requirements for the final product of the autonomous detection of breaches in fences using a drone. However, only a prototype of this product will be created in this project with limitations of the design requirements for the final product. The parts of the requirements which are found feasible to incorporate into the prototype are stated below and an analysis of future work that can benefit this solution. This can be seen in \autoref{sec:discussion}.
+
+\par
+The vision algorithm should be able to detect a breach in the fence larger than $40x40$ cm as well as note the GPS coordinates of it for further use from the end-user.
+
+When initialised, the drone should be able to fly autonomously without any human intervention. The result from such a flight needs to be analysed through the vision algorithm and return a result within the same day. An easy and short workflow/tutorial is made for the end-user.
+
+\par
+The fence breach detection algorithm and the autonomous flight software are the two most important aspects for evaluating the effectiveness of this solution. The project is deemed a success if the drone is able to fly autonomously and capture data of the fence as well as having a vision algorithm capable of detecting breaches 90\% of the time, in a tuned environment. 
+
+\par
+\textbf{Defining the final acceptance test:}\\
+To test the final developed system with the different aspects of this project integrated together, a final acceptance test is defined here and is how we will verify that the solution is durable. This test entails an automated path that the drone need to follow, while maintaining a desired distance from the fence and a stable ground height. This is done to ensure repeatability of the data while inspecting the fence. Furthermore, this will ensure that the whole fence is visible by the mounted sensor and that the data between different flight are as closely related to each other as possible. Obviously, not taking weather conditions into account. This will make the algorithm to detect a breach more stable. The automated path is defined by two set of GPS coordinates, manually taken at the fence which will be turned into a short mission, where a limitation to the drone speed is set to $1 m/s$ to ensure a stable video by reducing the blur and more time for the pilot to react if a failure is to occur.   
+The sensor on the drone will start capturing data as soon as the drone reaches its initial waypoint and begins the planned mission.  
+
+While the drone is flying the planned mission, the mounted sensor should capture data of the fence for offline analysis of a breach.  
+
+\par
+This whole process is monitored by a member of the team acting as the pilot, ready to take over if an error were to occur. The pilot should be able to fly the drone, then via the controller swap flight mode into mission and the drone should be able to follow the uploaded mission. Furthermore, he should also be able to start/end the data capture via the controller, to make multiple tests in a row, either automated or manually. The result of this can be seen in \autoref{sec:final_acceptance_test}.
+
+\end{document}

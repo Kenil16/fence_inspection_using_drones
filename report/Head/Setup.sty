@@ -1,0 +1,270 @@
+\ProvidesPackage{setup}
+\usepackage[headheight=10pt, top=3cm, bottom=3cm, left=2cm, right=2cm]{geometry}
+
+\usepackage{listings}
+\usepackage{xcolor}
+%\usepackage{Pygments}
+\usepackage{minted}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[toc,page]{appendix}
+\usepackage[english]{babel}
+%\usepackage[danish]{babel}
+\usepackage{booktabs}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage[format=plain,font=it]{caption}
+\usepackage{changepage}
+%\usepackage[american,siunitx]{circuitikz}
+\usepackage[siunitx]{circuitikz}
+\usepackage{eso-pic}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{float}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{lastpage}
+\usepackage{lscape}
+\usepackage{lipsum}
+\usepackage{marginnote}
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage{mdwlist}
+%\usepackage{minted}
+\usepackage[most]{tcolorbox}
+\usepackage{multicol}
+\usepackage{parskip}
+\usepackage{pdfpages}
+\usepackage{pgfplots}
+\usepackage{soul}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{subfiles}
+\usepackage{sidecap}
+\usepackage{subcaption}
+%\usepackage{showframe}     %Can be used to see the layout frame
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{tocvsec2}
+\usepackage{tabularx}
+\usepackage{tikz}
+%\usepackage[nottoc]{tocbibind}
+\usepackage{todonotes}
+%\usepackage{ulem}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{comment}
+
+
+\usepackage{tabu}
+\usepackage{longtable}
+
+
+\usepackage{pythontex}
+\usetikzlibrary{external}
+\usepackage{nccmath}
+\usepackage{algpseudocode}
+\setcounter{secnumdepth}{4}
+%\titleformat*{\paragraph}{\normalfont\itshape}
+
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalfont\normalsize\itshape}}
+
+\usepackage{unicode-math}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{booktabs,colortbl, array}
+\usepackage{pgfplotstable}
+%\usepackage{pythontex}
+\pgfplotsset{compat=1.8}
+\definecolor{rulecolor}{RGB}{0,71,171}
+\definecolor{tableheadcolor}{gray}{0.92}
+% Following is taken from Werner: http://tex.stackexchange.com/a/33761/3061
+% and modified for my needs
+%
+% Command \topline consists of a (slightly modified)
+% \toprule followed by a \heavyrule rule of colour tableheadcolor
+% (hence, 2 separate rules)
+\newcommand{\topline}{ %
+        \arrayrulecolor{rulecolor}\specialrule{0.1em}{\abovetopsep}{0pt}%
+        \arrayrulecolor{tableheadcolor}\specialrule{\belowrulesep}{0pt}{0pt}%
+        \arrayrulecolor{rulecolor}}
+% Command \midline consists of 3 rules (top colour tableheadcolor, middle colour black, bottom colour white)
+\newcommand{\midtopline}{ %
+        \arrayrulecolor{tableheadcolor}\specialrule{\aboverulesep}{0pt}{0pt}%
+        \arrayrulecolor{rulecolor}\specialrule{\lightrulewidth}{0pt}{0pt}%
+        \arrayrulecolor{white}\specialrule{\belowrulesep}{0pt}{0pt}%
+        \arrayrulecolor{rulecolor}}
+% Command \bottomline consists of 2 rules (top colour
+\newcommand{\bottomline}{ %
+        \arrayrulecolor{white}\specialrule{\aboverulesep}{0pt}{0pt}%
+        \arrayrulecolor{rulecolor} %
+        \specialrule{\heavyrulewidth}{0pt}{\belowbottomsep}}%
+
+
+\newcommand{\midheader}[2]{%
+        \midrule\topmidheader{#1}{#2}}
+\newcommand\topmidheader[2]{\multicolumn{#1}{c}{\textsc{#2}}\\%
+                \addlinespace[0.5ex]}
+
+\pgfplotstableset{normal/.style ={%
+        header=true,
+        string type,
+        font=\addfontfeature{Numbers={Monospaced}}\small,
+        column type=l,
+        every odd row/.style={
+            before row=
+        },
+        every head row/.style={
+            before row={\topline\rowcolor{tableheadcolor}},
+            after row={\midtopline}
+        },
+        every last row/.style={
+            after row=\bottomline
+        },
+        col sep=&,
+        row sep=\\
+    }
+}
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Sharelatex Example},
+    bookmarks=true,
+    pdfpagemode=FullScreen,
+    }
+
+\usepackage{pgfgantt}
+%\usepackage[pdftex]{graphicx}   %Enable pdflatex
+
+\usepackage[T1]{fontenc}
+\usepackage{bigfoot} % to allow verbatim in footnote
+\usepackage[numbered,framed]{matlab-prettifier}
+\usepackage{filecontents}
+\usepackage{tikz-3dplot}
+%\usepackage[active,tightpage]{preview} 
+
+\usetikzlibrary{automata, positioning}
+
+
+\lstset{
+  style              = Matlab-editor,
+  basicstyle         = \mlttfamily,
+  escapechar         = ",
+  mlshowsectionrules = true,
+}
+
+%\setlist{nolistsep}
+\pagestyle{fancy}
+
+\makeatletter
+\newcommand*{\currentname}{\@currentlabelname}
+\makeatother
+\newcommand{\NameOne}[1]{\todo[inline,author=Person1,color=red!20]{\currentname: ~ #1}}
+\newcommand{\NameTwo}[1]{\todo[inline,author=Person2,color=green!20]{\currentname: ~ #1}}
+\newcommand{\Namehree}[1]{\todo[inline,author=Person3,color=yellow!20]{\currentname: ~ #1}}
+\newcommand{\NameFour}[1]{\todo[inline,author=Person4,color=blue!20]{\currentname: ~ #1}}
+
+\newcommand\textlcsc[1]{\textsc{\MakeLowercase{#1}}}
+\newcommand*{\MyLabel}[3][1cm]{\parbox{#1}{\centering #2 \\ \vspace{-4pt} #3}}
+\newcommand{\hilight}[1]{\colorbox{yellow}{#1}}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\sectionmark}[1]{\markboth{}{#1}}
+\renewcommand{\subsectionmark}[1]{}% Remove \subsection from header
+\renewcommand{\cfttoctitlefont}{\Large}
+\renewcommand{\cftloftitlefont}{\Large}
+
+\setlength\cftparskip{-2pt}
+\setlength\cftbeforesecskip{1pt}
+\setlength\cftaftertoctitleskip{2pt}
+
+%\definecolor{MSBlue}{rgb}{.204,.353,.541}
+%\definecolor{MSLightBlue}{rgb}{.31,.506,.741}
+
+\usetikzlibrary{patterns}
+\numberwithin{equation}{section}
+\parindent=0pt
+\pgfplotsset{width=8cm,compat=1.9}
+
+\rfoot{Page \thepage\ of \pageref{LastPage}}
+%\rfoot{Side \thepage\ af \pageref{LastPage}}
+
+\makeatletter
+\renewcommand*\env@matrix[1][*\c@MaxMatrixCols c]{%
+  \hskip -\arraycolsep
+  \let\@ifnextchar\new@ifnextchar
+  \array{#1}}
+\makeatother
+
+\titlespacing*{\section}{0pt}{0.5cm}{0cm}
+\titlespacing*{\subsection}{0pt}{0.3cm}{0cm}
+\titlespacing*{\subsubsection}{0pt}{0.1cm}{0cm}
+\titlespacing*{\paragraph}{0pt}{0cm}{0cm}
+\titleformat*{\section}{\Large}
+\titleformat*{\subsection}{\large}
+\titleformat*{\subsubsection}{\normalsize \itshape}
+%\setmainfont[BoldFont=timesbd.ttf,ItalicFont=timesi.ttf,BoldItalicFont=timesbi.ttf]{times.ttf}
+\setmainfont{Times New Roman}
+
+\newcommand\myeq{\stackrel{\mathclap{\normalfont\mbox{\scriptsize Inverter}}}{=}}
+
+\lstset{basicstyle=\footnotesize}
+
+\newtcbtheorem[no counter]{Definition}{Definition}{
+  enhanced,
+  sharp corners,
+  attach boxed title to top left={
+    yshifttext=-1mm
+  },
+  colback=white,
+  colframe=cyan!60,
+  fonttitle=\bfseries\itshape,
+  coltitle=white,
+  boxed title style={
+    sharp corners,
+    size=small,
+    colback=cyan!60,
+    colframe=cyan!60,
+  } 
+}{prf}
+
+\newtcbtheorem[no counter]{Pseudo}{Pseudocode}{
+  enhanced,
+  sharp corners = northwest,
+  attach boxed title to top left={
+    yshifttext=-1mm
+  },
+  colback=black!3,
+  colframe=black!75,
+  fonttitle=\bfseries\itshape,
+  coltitle=white,
+  boxed title style={
+    sharp corners = south,
+    size=small,
+    colback=black!75,
+    colframe=black!75,
+  } 
+}{prf}
+
+\newlist{Indentation}{itemize}{4}
+\setlist[Indentation,1]{%
+    label={},
+    noitemsep,
+    leftmargin=0pt,
+    }
+\setlist[Indentation]{%
+    label={},
+    noitemsep,
+    }

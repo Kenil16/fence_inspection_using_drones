@@ -1,0 +1,39 @@
+\begin{document}
+\section{Workflow}
+This section will explain the workflow of the end-users, how to initialise the product for first time use. Furthermore, it will explain how the everyday usage of this product is done.  
+
+\subsection{Setup workflow (First time setup)}
+\label{subsec:setup_workflow}
+When any airport or other facility incorporates the autonomous fence inspection solution they will need an initial setup. If the need arises to change the drone inspection route at any point this setup will be performed again. It comprises of the following steps:
+\begin{enumerate}
+    \item Identify 4 corner points of the airport fence and record their GPS coordinates.
+    \item Insert the GPS coordinates in the UI/software to automatically get the flight path around the airport.
+    \\
+    \textit{Alternatively.}
+    \\
+    The pilot will need to fly the drone manually along the desired inspection path and save the path using the UI/software available.
+\end{enumerate}
+
+\clearpage
+\subsection{User workflow (Routine operation)}
+\label{subsec:user_workflow}
+The solution will be able to fly autonomously a minimum of three times per day, depending on the end-user requirements. Given that the setup workflow has been performed. The user workflow will comprise of the following steps:
+
+%After each flight, an alert is given to the employee incharge of the drone project. This employee will take two new freshly charged LiPo batteries and go to the drones landing/take off point. Arriving at site, an inspection check of the drone is performed, if everything is fine, the battery are swap and the drone is ready for the upcoming flight route.
+
+\begin{enumerate}
+    \item Autonomous flight three times per day at specific time intervals. \vspace{-5pt}
+    \item After each flight, employee performs an quality check for the drone. \vspace{-5pt}
+    \item Employee swap batteries on the drone. \vspace{-5pt}
+    \item Drone is now ready for the next upcoming flight. \vspace{-5pt}
+    \item This routine will continue for the amount of security check required per day. \vspace{-5pt} 
+    \item If breach is detected an alert is sent to the employee with GPS coordinates. \vspace{-5pt}
+    \item The employee should act according to end-users security requirements and alert further authorities. \vspace{-5pt}
+    \item If a weather alert occurs, the employee must take charge and manually do the fence inspection. \vspace{-5pt}
+    \item In case of a critical failure of any kind, the drone will land at its given position, send an alert to the employee, with its current/last known position. \vspace{-5pt}
+    \item Critical failure: Employee should fetch the drone and place it at the landing/takeoff platform and inspect flight logs. 
+\end{enumerate}
+
+Following these instructions on a daily basis is required by a certified employee, for this product to be deemed a success. 
+
+\end{document}

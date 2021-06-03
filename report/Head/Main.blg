@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Main.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Main-blx.bib
+Database file #2: Bibliography.bib
+Biblatex version: 3.8
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 22 entries,
+            6268 wiz_defined-function locations,
+            1280 strings with 11972 characters,
+and the built_in function-call counts, 99543 in all, are:
+= -- 6490
+> -- 1700
+< -- 500
++ -- 2200
+- -- 629
+* -- 7193
+:= -- 9738
+add.period$ -- 0
+call.type$ -- 22
+change.case$ -- 161
+chr.to.int$ -- 30
+cite$ -- 42
+duplicate$ -- 10890
+empty$ -- 9962
+format.name$ -- 1124
+if$ -- 20595
+int.to.chr$ -- 0
+int.to.str$ -- 43
+missing$ -- 0
+newline$ -- 555
+num.names$ -- 718
+pop$ -- 7228
+preamble$ -- 1
+purify$ -- 245
+quote$ -- 0
+skip$ -- 3047
+stack$ -- 0
+substring$ -- 10803
+swap$ -- 2627
+text.length$ -- 528
+text.prefix$ -- 21
+top$ -- 1
+type$ -- 736
+warning$ -- 0
+while$ -- 1180
+width$ -- 0
+write$ -- 534

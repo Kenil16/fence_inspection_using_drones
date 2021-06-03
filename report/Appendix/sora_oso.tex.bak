@@ -1,0 +1,125 @@
+\documentclass[../Head/Main.tex]{subfiles}
+\begin{document}
+
+% Please add the following required packages to your document preamble:
+% \usepackage{lscape}
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{landscape}
+\section{OSOs}
+Table for SORA operational safety objectives compliance:
+\begin{longtable}[c]{|l|l|l|l|}
+\caption{Operational Safety Objectives Compliance}
+\label{tab:sora_oso}\\
+\hline
+\textbf{OSO number} &
+  \textbf{Technical issues with the UAS} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}SAIL VI \\ required \\ level\end{tabular}} &
+  \textbf{Method of compliance} \\ \hline
+\endfirsthead
+%
+\endhead
+%
+OSO\#1 &
+  Ensure the UAS operator is competent and/or proven &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The airport authority as an operator \\ will ensure compliance\end{tabular} \\ \hline
+OSO\#2 &
+  UAS manufactured by competent and/or proven entity &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The drone will be manufactured,\\  tested and certified by the \\ competent authority\end{tabular} \\ \hline
+OSO\#3 &
+  UAS maintained by competent and/or proven entity &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The airport authority and Lorenz \\ technology will ensure the optimum \\ maintenance of the drone\end{tabular} \\ \hline
+OSO\#4 &
+  UAS developed to authority recognised design standards &
+  H &
+  \begin{tabular}[c]{@{}l@{}}This will be ensured that the drone \\ comply with required design standards\end{tabular} \\ \hline
+OSO\#5 &
+  UAS is designed considering system safety and reliability &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The features and drone operation will \\ be designed and developed keeping \\ in mind the safety aspects\end{tabular} \\ \hline
+OSO\#6 &
+  C3 link performance is appropriate for the operation &
+  H &
+  \begin{tabular}[c]{@{}l@{}}C3 Link performance is appropriate \\ for this operation\end{tabular} \\ \hline
+OSO\#7 &
+  \begin{tabular}[c]{@{}l@{}}Inspection of the UAS (product inspection) to ensure \\ consistency with the ConOps\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The drone operator will ensure\\  inspection of UAS\end{tabular} \\ \hline
+OSO\#8 &
+  \begin{tabular}[c]{@{}l@{}}Operational procedures are defined, \\ validated and adhered to\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The workflow and operational procedures\\  will be developed and provided to \\ the operator\end{tabular} \\ \hline
+OSO\#9 &
+  \begin{tabular}[c]{@{}l@{}}Remote crew trained and current and \\ able to control the abnormal situation\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}Training to the remote crew will be \\ provided to enable safe operation \\ of the drone\end{tabular} \\ \hline
+OSO\#10 &
+  Safe recovery from a technical issue &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The drone has features to recover\\  in case of technical failures\end{tabular} \\ \hline
+\multicolumn{3}{|l|}{\textbf{Deterioration of external systems supporting UAS operations}} &
+  \textbf{} \\ \hline
+OSO\#11 &
+  \begin{tabular}[c]{@{}l@{}}Procedures are in-place to handle the deterioration of \\ external systems supporting UAS operations\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}External System include the Ground \\ control station and RC controller.\\ The drone will automatically land\\  in case of malfunction of external \\ systems\end{tabular} \\ \hline
+OSO\#12 &
+  \begin{tabular}[c]{@{}l@{}}The UAS is designed to manage the deterioration\\  of external systems supporting UAS operations\end{tabular} &
+  H &
+  This is builtin in the flight controller \\ \hline
+OSO\#13 &
+  \begin{tabular}[c]{@{}l@{}}External services supporting UAS operations\\  are adequate for the operation\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}External services are adequate \\ for the operation\end{tabular} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Human Error}} \\ \hline
+OSO\#14 &
+  \begin{tabular}[c]{@{}l@{}}Operational procedures are defined, validated\\  and adhered to\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}Adherence to operational procedures \\ will be ensured by the operator\end{tabular} \\ \hline
+OSO\#15 &
+  \begin{tabular}[c]{@{}l@{}}Remote crew trained and current and able to\\  control the abnormal situation\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}Crew will be trained to operate the \\ drone and handle abnormal situations\end{tabular} \\ \hline
+OSO\#16 &
+  Multi-crew coordination &
+  H &
+  Not required in this operational scenario \\ \hline
+OSO\#17 &
+  Remote crew is fit to operate &
+  H &
+  This will be ensured by the drone operator \\ \hline
+OSO\#18 &
+  \begin{tabular}[c]{@{}l@{}}Automatic protection of the flight \\ envelope from human error\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}This will be ensured by the pilot in-charge \\ of operating the drone\end{tabular} \\ \hline
+OSO\#19 &
+  Safe recovery from human error &
+  H &
+  \begin{tabular}[c]{@{}l@{}}This will be achieved through coordination \\ with the airport control tower and \\ automatic landing features\end{tabular} \\ \hline
+OSO\#20 &
+  \begin{tabular}[c]{@{}l@{}}A human factors evaluation has been \\ performed and the human machine\\  interface (HMI) found appropriate \\ for the mission\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The HMI being used is standard QGroundControl \\ which makes the evaluation unnecessary\\  for this operational scenario.\end{tabular} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Adverse operating conditions}} \\ \hline
+OSO\#21 &
+  \begin{tabular}[c]{@{}l@{}}Operational procedures are defined, \\ validated and adhered to\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The drone will only be operated in \\ favorable weather conditions.\end{tabular} \\ \hline
+OSO\#22 &
+  \begin{tabular}[c]{@{}l@{}}The remote crew is trained to identify \\ critical environmental conditions and \\ to avoid them\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The drone operator will be trained \\ to avoid flying the drone in adverse\\  environmental conditions\end{tabular} \\ \hline
+OSO\#23 &
+  \begin{tabular}[c]{@{}l@{}}Environmental conditions for safe \\ operations are defined, measurable \\ and adhered to\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}The limits on operation of drone in \\ different environmental conditions \\ will be provided to the drone operator\\  and implemented by the airport authority\end{tabular} \\ \hline
+OSO\#24 &
+  \begin{tabular}[c]{@{}l@{}}UAS is designed and qualified for \\ adverse environmental conditions\end{tabular} &
+  H &
+  \begin{tabular}[c]{@{}l@{}}Since the UAS will only operate in \\ favorable weather conditions, \\ this design and qualification is not necessary.\end{tabular} \\ \hline
+\end{longtable}
+\end{landscape}
+\end{document}

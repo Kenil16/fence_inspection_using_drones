@@ -1,0 +1,7 @@
+\documentclass[../Head/Main.tex]{subfiles}
+\begin{document}
+\section{Agile Development Framework}
+We decided to adopt Scrumban via JIRA as the Agile development framework for the prototype development. Scrumban is a very effective tool for team collaboration and development of products with complex requirements. This framework ensures that we continue to deliver value and meet goals throughout the development period allocated for the prototype. It also helps us to get feedback on the completed deliverables and incorporate it in the design of the prototype. 
+\\
+We are utilising the scrum daily meeting every time we meet to discuss progress, potential issues and how to proceed.
+\end{document}

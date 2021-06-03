@@ -1,0 +1,49 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{../Head/Setup}
+\raggedbottom
+\linespread{1.15}
+\graphicspath{{./Figures/}{../Figures/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\addbibresource{Bibliography.bib}
+
+\begin{document}
+
+    \cfoot[]{ \fancyplain{}{\footnotesize} }
+    \fancyhead{}
+    
+    \subfile{../Head/Titlepage}
+    \clearpage
+    \thispagestyle{empty}
+    \subfile{../Sections/abstract}
+    \clearpage
+    \setcounter{tocdepth}{4}
+    \setcounter{page}{0}	
+	\tableofcontents 
+	\thispagestyle{empty}
+    \clearpage
+	\thispagestyle{fancy}    
+       
+    \fancyhead[R]{\normalsize\rightmark}
+    \fancyhead[L]{\large \textsc{Section }\normalsize\thesection}
+    
+    % Sections
+    \subfile{../Sections/introduction.tex}
+    \subfile{../Sections/requirements_UAV.tex}
+    \clearpage
+    \subfile{../Sections/agile_framework.tex}
+    \subfile{../Sections/development_schedule.tex}
+    \subfile{../Sections/workflow.tex}
+    \subfile{../Sections/robotics.tex}
+    \subfile{../Sections/vision.tex}
+    \subfile{../Sections/final_acceptance_test.tex}
+    \clearpage
+    \subfile{../Sections/discussion.tex}
+    \subfile{../Sections/sora.tex}
+    \subfile{../Sections/conclusion.tex}
+	% Citations
+	\clearpage
+	\printbibliography[heading=bibintoc]
+	\subfile{../Appendix/Main_appendix}
+	
+\end{document}
