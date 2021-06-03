@@ -22,7 +22,13 @@ Some of the results can be seen in Figure 33 and 34. Here all the breaches have 
 </p>
 
 This yielded good results with a mean average precision (mAP) of 0.874 in the augmented test set of 1395 images as well
-a correct detection of all custom made breaches in the final acceptance test. However, furture work must be done in order to implement the solution on a UAV for autonoumous applications. 
+a correct detection of all custom made breaches in the final acceptance test. 
+
+Illustrations of one of the flight tests where the breach detection algorithm were used. This can be seen in Figure 35, where a cardboard is placed on the fence to illustrate a breach. Here the cardboard is detected with only minor false detections which must be corrected. 
+<p align="center">
+  <img src="report/Figures/augmentations/mask_rcnn_three.png" width=95%>
+</p>
+However, furture work must be done in order to implement the solution on a UAV for autonoumous applications. 
 
 The overall theory about this implemenation and how this has been implemented can be seen in the report 
 [Experts in Teams Innovation - Fence inspection for Lorenz Technology](https://github.com/Kenil16/fence_inspection_using_drones/blob/main/report/Head/Main.pdf).
